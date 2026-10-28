@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 270" role="img" aria-labelledby="t d" font-family="system-ui, sans-serif" font-size="12">
+  <title id="t">Presa de materiales sueltos: esquema de una sección</title>
+  <desc id="d">Sección de una presa de tierra o escollera, con forma de trapecio muy ancho y taludes suaves. Un núcleo poco permeable en el centro frena las filtraciones. El agua queda a la izquierda.</desc>
+  <defs>
+    <marker id="punta" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#1d3a2a"/>
+    </marker>
+  </defs>
+  <rect width="440" height="270" fill="#f3f9ef"/>
+  <!-- agua -->
+  <polygon points="20,100 106,100 70,225 20,225" fill="#2d6673" fill-opacity="0.22"/>
+  <line x1="20" y1="100" x2="116" y2="100" stroke="#2d6673" stroke-width="2"/>
+  <text x="26" y="92" fill="#1c4853">Agua</text>
+  <!-- terreno -->
+  <rect x="0" y="225" width="440" height="30" fill="#bcd9b0"/>
+  <!-- cuerpo de la presa -->
+  <polygon points="40,225 120,70 210,70 400,225" fill="#b7c9a7" stroke="#1d3a2a" stroke-width="2.5"/>
+  <text x="270" y="170" fill="#1d3a2a">Tierra y escollera</text>
+  <!-- núcleo -->
+  <polygon points="150,70 180,70 210,225 130,225" fill="#6f8f5e" fill-opacity="0.75" stroke="#1d3a2a" stroke-width="1.5"/>
+  <text x="102" y="52" fill="#1d3a2a">Núcleo poco permeable</text>
+  <line x1="165" y1="58" x2="165" y2="100" stroke="#1d3a2a" stroke-width="1.2"/>
+  <!-- presión -->
+  <g stroke="#1d3a2a" stroke-width="2" marker-end="url(#punta)">
+    <line x1="48" y1="135" x2="62" y2="135"/>
+    <line x1="40" y1="165" x2="58" y2="165"/>
+    <line x1="30" y1="195" x2="52" y2="195"/>
+  </g>
+  <text x="228" y="262" text-anchor="middle" fill="#1d3a2a" font-size="11">Se sostiene por su gran masa y sus taludes suaves</text>
+  <text x="428" y="20" text-anchor="end" fill="#3b5a45" font-size="11">Esquema ilustrativo, sin escala</text>
+</svg>

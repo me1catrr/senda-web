@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 270" role="img" aria-labelledby="t d" font-family="system-ui, sans-serif" font-size="12">
+  <title id="t">Presa de gravedad: esquema de una sección</title>
+  <desc id="d">Sección vertical de una presa de gravedad. El agua queda a la izquierda y empuja con una presión triangular. El peso de la presa y el empuje del agua dan una resultante que cae dentro de la base.</desc>
+  <defs>
+    <marker id="punta" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#1d3a2a"/>
+    </marker>
+    <marker id="puntaT" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#b3261e"/>
+    </marker>
+  </defs>
+  <rect width="440" height="270" fill="#f3f9ef"/>
+  <!-- agua -->
+  <polygon points="20,100 150,100 150,225 20,225" fill="#2d6673" fill-opacity="0.22"/>
+  <line x1="20" y1="100" x2="150" y2="100" stroke="#2d6673" stroke-width="2"/>
+  <text x="26" y="92" fill="#1c4853">Agua</text>
+  <!-- terreno -->
+  <rect x="0" y="225" width="440" height="30" fill="#bcd9b0"/>
+  <text x="428" y="246" text-anchor="end" fill="#1d3a2a">Roca de cimentación</text>
+  <!-- presa -->
+  <polygon points="150,60 182,60 292,225 150,225" fill="#c5d6bf" stroke="#1d3a2a" stroke-width="2.5"/>
+  <text x="196" y="88" fill="#1d3a2a">Presa</text>
+  <!-- presión triangular -->
+  <polygon points="150,100 84,222 150,222" fill="none" stroke="#1d3a2a" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <g stroke="#1d3a2a" stroke-width="2" marker-end="url(#punta)">
+    <line x1="134" y1="130" x2="148" y2="130"/>
+    <line x1="118" y1="160" x2="148" y2="160"/>
+    <line x1="102" y1="190" x2="148" y2="190"/>
+    <line x1="86" y1="218" x2="148" y2="218"/>
+  </g>
+  <text x="26" y="118" fill="#1d3a2a" font-size="11">La presión crece</text>
+  <text x="26" y="132" fill="#1d3a2a" font-size="11">con la profundidad</text>
+  <!-- peso -->
+  <line x1="196" y1="120" x2="196" y2="190" stroke="#1d3a2a" stroke-width="3" marker-end="url(#punta)"/>
+  <text x="204" y="160" fill="#1d3a2a">Peso P</text>
+  <!-- resultante -->
+  <line x1="236" y1="140" x2="252" y2="222" stroke="#b3261e" stroke-width="3" marker-end="url(#puntaT)"/>
+  <text x="258" y="170" fill="#b3261e">Resultante R</text>
+  <!-- base -->
+  <line x1="150" y1="238" x2="292" y2="238" stroke="#1d3a2a" stroke-width="1.5"/>
+  <line x1="150" y1="233" x2="150" y2="243" stroke="#1d3a2a" stroke-width="1.5"/>
+  <line x1="292" y1="233" x2="292" y2="243" stroke="#1d3a2a" stroke-width="1.5"/>
+  <text x="221" y="258" fill="#1d3a2a" text-anchor="middle" font-size="11">La resultante R cae dentro de la base</text>
+  <text x="428" y="20" text-anchor="end" fill="#3b5a45" font-size="11">Esquema ilustrativo, sin escala</text>
+</svg>

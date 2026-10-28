@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 270" role="img" aria-labelledby="t d" font-family="system-ui, sans-serif" font-size="12">
+  <title id="t">Presa de contrafuertes: esquema de una sección</title>
+  <desc id="d">Sección de una presa de contrafuertes. Una pantalla inclinada recibe el empuje del agua, que queda a la izquierda, y un contrafuerte triangular lo lleva hasta el terreno.</desc>
+  <defs>
+    <marker id="punta" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#1d3a2a"/>
+    </marker>
+    <marker id="puntaT" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#b3261e"/>
+    </marker>
+  </defs>
+  <rect width="440" height="270" fill="#f3f9ef"/>
+  <!-- agua sobre la pantalla inclinada -->
+  <polygon points="20,100 150,100 214,225 20,225" fill="#2d6673" fill-opacity="0.22"/>
+  <line x1="20" y1="100" x2="150" y2="100" stroke="#2d6673" stroke-width="2"/>
+  <text x="26" y="92" fill="#1c4853">Agua</text>
+  <!-- terreno -->
+  <rect x="0" y="225" width="440" height="30" fill="#bcd9b0"/>
+  <!-- contrafuerte -->
+  <polygon points="150,70 214,225 330,225" fill="#c5d6bf" stroke="#1d3a2a" stroke-width="2.5"/>
+  <text x="250" y="206" fill="#1d3a2a">Contrafuerte</text>
+  <!-- pantalla -->
+  <line x1="150" y1="70" x2="214" y2="225" stroke="#1d3a2a" stroke-width="9" stroke-linecap="butt"/>
+  <text x="104" y="60" fill="#1d3a2a">Pantalla inclinada</text>
+  <!-- empuje perpendicular a la pantalla -->
+  <g stroke="#1d3a2a" stroke-width="2" marker-end="url(#punta)">
+    <line x1="126" y1="136" x2="168" y2="118"/>
+    <line x1="146" y1="184" x2="188" y2="166"/>
+  </g>
+  <!-- camino de la carga -->
+  <line x1="216" y1="150" x2="262" y2="218" stroke="#b3261e" stroke-width="3" marker-end="url(#puntaT)"/>
+  <text x="270" y="170" fill="#b3261e">La carga baja al terreno</text>
+  <text x="220" y="262" text-anchor="middle" fill="#1d3a2a" font-size="11">Se ahorra hormigón, pero cada contrafuerte concentra carga</text>
+  <text x="428" y="20" text-anchor="end" fill="#3b5a45" font-size="11">Esquema ilustrativo, sin escala</text>
+</svg>

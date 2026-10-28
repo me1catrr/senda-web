@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 270" role="img" aria-labelledby="t d" font-family="system-ui, sans-serif" font-size="12">
+  <title id="t">Presa de arco: esquema en planta</title>
+  <desc id="d">Vista desde arriba de una presa de arco en un valle estrecho. El agua llega por arriba y empuja el arco, que lleva la carga hacia las laderas de roca a ambos lados.</desc>
+  <defs>
+    <marker id="punta" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#1d3a2a"/>
+    </marker>
+    <marker id="puntaT" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#b3261e"/>
+    </marker>
+  </defs>
+  <rect width="440" height="270" fill="#f3f9ef"/>
+  <!-- agua aguas arriba -->
+  <path d="M120 30 H320 L292 150 Q220 100 148 150 Z" fill="#2d6673" fill-opacity="0.22"/>
+  <text x="206" y="52" fill="#1c4853">Agua (aguas arriba)</text>
+  <!-- laderas -->
+  <polygon points="0,30 120,30 148,150 112,250 0,250" fill="#bcd9b0" stroke="#1d3a2a" stroke-width="1.5"/>
+  <polygon points="440,30 320,30 292,150 328,250 440,250" fill="#bcd9b0" stroke="#1d3a2a" stroke-width="1.5"/>
+  <text x="14" y="140" fill="#1d3a2a">Ladera</text>
+  <text x="372" y="140" fill="#1d3a2a">Ladera</text>
+  <!-- arco -->
+  <path d="M148 150 Q220 100 292 150" fill="none" stroke="#1d3a2a" stroke-width="14" stroke-linecap="butt"/>
+  <text x="206" y="204" fill="#1d3a2a">Aguas abajo</text>
+  <!-- empuje -->
+  <g stroke="#1d3a2a" stroke-width="2" marker-end="url(#punta)">
+    <line x1="170" y1="70" x2="170" y2="120"/>
+    <line x1="220" y1="70" x2="220" y2="100"/>
+    <line x1="270" y1="70" x2="270" y2="120"/>
+  </g>
+  <!-- reacciones -->
+  <g stroke="#b3261e" stroke-width="3" marker-end="url(#puntaT)">
+    <line x1="150" y1="152" x2="112" y2="176"/>
+    <line x1="290" y1="152" x2="328" y2="176"/>
+  </g>
+  <text x="62" y="196" fill="#b3261e">Reacción</text>
+  <text x="318" y="196" fill="#b3261e">Reacción</text>
+  <text x="220" y="258" text-anchor="middle" fill="#1d3a2a" font-size="11">La carga viaja por el arco hasta las laderas</text>
+  <text x="428" y="20" text-anchor="end" fill="#3b5a45" font-size="11">Esquema ilustrativo, sin escala</text>
+</svg>

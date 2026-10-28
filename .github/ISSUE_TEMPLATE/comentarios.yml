@@ -1,0 +1,54 @@
+name: Comentarios sobre la ficha
+description: Cuéntanos qué te ha parecido y qué mejorarías. No incluyas datos personales.
+title: "[Comentario] "
+labels: ["comentarios"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gracias por revisar SENDA. Es un **borrador**: el itinerario está pendiente de reconocer y no es una guía de navegación.
+        No escribas datos personales ni de menores.
+  - type: dropdown
+    id: perfil
+    attributes:
+      label: ¿Desde qué perfil lo revisas?
+      options:
+        - Familia con niños o niñas
+        - Docente o educación ambiental
+        - Ingeniería (presas, hidráulica)
+        - Biología, naturaleza o veterinaria
+        - Senderismo o asociación
+        - Otro
+    validations:
+      required: true
+  - type: dropdown
+    id: seccion
+    attributes:
+      label: ¿Sobre qué parte?
+      options:
+        - Portada y avisos
+        - Antes de salir
+        - Mapa y perfil
+        - La presa y el laboratorio
+        - Vida bajo el agua
+        - Naturaleza y estaciones
+        - Con perro
+        - Modo explorador y cuestionario
+        - Patrimonio
+        - Fuentes
+        - Diseño, colores o móvil
+        - Otra
+  - type: textarea
+    id: gusta
+    attributes:
+      label: Lo que mejor funciona
+  - type: textarea
+    id: mejorar
+    attributes:
+      label: Lo que mejorarías o no se entiende
+    validations:
+      required: true
+  - type: textarea
+    id: error
+    attributes:
+      label: ¿Hay algún dato incorrecto? Indica cuál y, si puedes, una fuente
